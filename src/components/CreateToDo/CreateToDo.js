@@ -24,7 +24,7 @@ const CreateTodo = ({
       value={description}
       placeholder="Description"
     />
-    <Button onClick={onCreate}>Create Todo</Button>
+    <Button onClick={onCreate}>Create To Do Item</Button>
   </div>
 );
 

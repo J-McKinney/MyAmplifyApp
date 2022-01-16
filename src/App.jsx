@@ -28,6 +28,7 @@ function App() {
 
   useEffect(() => {
     fetchTodos();
+    // console.log(Amplify.API.Auth.user.attributes.email)
   }, []);
 
   function setInput(key, value) {
@@ -119,7 +120,7 @@ function App() {
           <Authenticator>
             {({ signOut, user }) => (
               <div>
-                <p>Hey {user.username}, welcome to my app!</p>
+                <p>Hey {user.attributes.email}, welcome to my app!</p>
                 <button className={Styles.btn} onClick={signOut}>
                   Sign out
                 </button>

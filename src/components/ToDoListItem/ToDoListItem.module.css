@@ -15,17 +15,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffb703;
-  border-radius: 2px;
+  background-color: #ffffff;
+  border-radius: 10px;
 }
 
 .todoName {
   font-weight: bold;
   margin-bottom: 10px;
-  color: black;
+  color: #282c34;
 }
 
 .todoDescription {
   margin-bottom: 0;
-  color: black;
+  color: #282c34;
 }

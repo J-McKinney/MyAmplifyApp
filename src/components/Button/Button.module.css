@@ -1,7 +1,11 @@
 .button {
-  background-color: #fb8500;
-  color: black;
-  outline: none;
-  font-size: 18;
-  padding: 12px 10px;
+  background: #61dafb;
+  margin: 2px;
+  padding: 15px;
+  font-weight: 900;
+  border-radius: 15px;
+  border-style: none;
+  box-shadow: 1px 1px 3px #000000, -1px -1px 1px #cfcfcf;
+  cursor: pointer;
+  color: #282c34;
 }
