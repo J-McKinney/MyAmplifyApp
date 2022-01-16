@@ -3,9 +3,10 @@
 # FOR TESTING ONLY!
 # input AMPLIFY { globalAuthRule: AuthRule = { allow: public } }
 
-type TodoList @model @auth(rules: [{allow: owner}]) {
+type TodoList @model @auth(rules: [{ allow: owner, ownerField: "author" }]) {
 # type TodoList @model {
   id: ID!
   name: String!
   description: String!
+  author: "JesseMcKinney513@gmail.com"
 }
