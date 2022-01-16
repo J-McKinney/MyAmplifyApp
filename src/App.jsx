@@ -101,11 +101,11 @@ function App() {
   }
 
   const errorMessage = apiError && (
-    <p className={Styles.errorText}>
+    <h5 className={Styles.errorText}>
       {apiError.errors.map((error) => (
         <p>{error.message}</p>
       ))}
-    </p>
+    </h5>
   );
 
   if (isLoading) {

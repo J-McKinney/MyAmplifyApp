@@ -45,6 +45,9 @@
               "userPoolConfig": {
                 "userPoolId": "authmyamplifyappb0ff6583"
               }
+            },
+            {
+              "authenticationType": "AWS_IAM"
             }
           ]
         }

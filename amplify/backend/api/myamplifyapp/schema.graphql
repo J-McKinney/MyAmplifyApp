@@ -3,10 +3,17 @@
 # FOR TESTING ONLY!
 # input AMPLIFY { globalAuthRule: AuthRule = { allow: public } }
 
-type TodoList @model @auth(rules: [{ allow: owner, ownerField: "author" }]) {
+type TodoList @model @auth(rules: [
+        #this is for logged-in user. cognito user is default for provider
+        # In order to prevent private users from creating, another rule must be set for creating
+        { allow: private, operations: [read] }
+        # default provider is cognito
+        { allow: private, provider: iam, operations: [read, create, update, delete] }
+        # Only Owner can update its own data
+        { allow: owner, ownerField: "username", operations: [update] }]) 
+{
 # type TodoList @model {
   id: ID!
   name: String!
   description: String!
-  author: String!
 }

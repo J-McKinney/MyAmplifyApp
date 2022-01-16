@@ -12,6 +12,9 @@
       {
         "mode": "AMAZON_COGNITO_USER_POOLS",
         "cognitoUserPoolId": "authmyamplifyappb0ff6583"
+      },
+      {
+        "mode": "AWS_IAM"
       }
     ]
   }
