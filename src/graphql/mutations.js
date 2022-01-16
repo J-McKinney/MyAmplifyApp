@@ -12,6 +12,7 @@ export const createTodoList = /* GraphQL */ `
       description
       createdAt
       updatedAt
+      owner
     }
   }
 `;
@@ -26,6 +27,7 @@ export const updateTodoList = /* GraphQL */ `
       description
       createdAt
       updatedAt
+      owner
     }
   }
 `;
@@ -40,6 +42,7 @@ export const deleteTodoList = /* GraphQL */ `
       description
       createdAt
       updatedAt
+      owner
     }
   }
 `;
