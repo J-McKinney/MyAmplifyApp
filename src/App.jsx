@@ -19,7 +19,6 @@ import "./App.css";
 
 Amplify.configure(awsconfig);
 
-// const initialState = { name: "", description: "" };
 const initialState = { name: "", description: "" };
 
 function App() {
@@ -110,7 +109,6 @@ function App() {
   );
 
   if (isLoading) {
-    // return "Loading...";
     return (
       <div
         style={{

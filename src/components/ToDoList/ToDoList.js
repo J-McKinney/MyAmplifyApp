@@ -10,8 +10,6 @@ const TodoList = ({ todos, onRemoveTodo, onItemUpdate }) => {
         todos.map((todo, index) => (
           <TodoListItem
             key={todo.id ? todo.id : index}
-            // key={todo.id}
-            // index={index}
             todo={todo}
             onRemoveTodo={onRemoveTodo}
             onItemUpdate={onItemUpdate}

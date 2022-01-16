@@ -10,7 +10,6 @@ export const createTodoList = /* GraphQL */ `
       id
       name
       description
-      username
       createdAt
       updatedAt
     }
@@ -25,7 +24,6 @@ export const updateTodoList = /* GraphQL */ `
       id
       name
       description
-      username
       createdAt
       updatedAt
     }
@@ -40,7 +38,6 @@ export const deleteTodoList = /* GraphQL */ `
       id
       name
       description
-      username
       createdAt
       updatedAt
     }
