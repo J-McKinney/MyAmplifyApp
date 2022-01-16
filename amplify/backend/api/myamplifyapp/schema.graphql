@@ -6,6 +6,4 @@ type TodoList @model {
   id: ID!
   name: String!
   description: String!
-  completed: Boolean!
-  createdOn: Int
 }

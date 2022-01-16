@@ -158,4 +158,10 @@
 
 ### this creates a todo list API query
 
+### if you decide to change the query in any way and push then run
+
+### amplify push --allow-destructive-graphql-schema-updates
+
+### now create components and style
+
 ### 
