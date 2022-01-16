@@ -131,3 +131,17 @@
 ### run npm start and test
 
 ### And, Style It BeDazzled!!!! LOL
+
+### in the terminal, amplify add api
+
+### select, GraphQL
+
+### press enter to conflict
+
+### select, single object with fields
+
+### edit the schema
+
+### choose your default editor
+
+### 
