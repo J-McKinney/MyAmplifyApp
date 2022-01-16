@@ -19,6 +19,7 @@ import "./App.css";
 
 Amplify.configure(awsconfig);
 
+// const initialState = { name: "", description: "" };
 const initialState = { name: "", description: "" };
 
 function App() {

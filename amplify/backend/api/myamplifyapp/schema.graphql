@@ -16,7 +16,6 @@ type TodoList @model {
   id: ID!
   name: String!
   description: String!
-  username: String!
 }
 
 # input AMPLIFY { globalAuthRule: AuthRule = { allow: public } } # FOR TESTING ONLY!
