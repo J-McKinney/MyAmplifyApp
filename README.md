@@ -156,4 +156,6 @@
 
 ### this creates a graphql folder with mutations.js, queries.js, schema.json, subscriptions.js
 
+### this creates a todo list API query
+
 ### 
