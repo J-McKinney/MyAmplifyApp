@@ -8,5 +8,5 @@ type TodoList @model @auth(rules: [{ allow: owner, ownerField: "author" }]) {
   id: ID!
   name: String!
   description: String!
-  author: "JesseMcKinney513@gmail.com"
+  author: String!
 }
