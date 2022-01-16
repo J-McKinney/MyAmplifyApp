@@ -7,9 +7,9 @@ export const getTodoList = /* GraphQL */ `
       id
       name
       description
+      username
       createdAt
       updatedAt
-      owner
     }
   }
 `;
@@ -24,9 +24,9 @@ export const listTodoLists = /* GraphQL */ `
         id
         name
         description
+        username
         createdAt
         updatedAt
-        owner
       }
       nextToken
     }

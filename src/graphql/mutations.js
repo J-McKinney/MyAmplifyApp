@@ -10,9 +10,9 @@ export const createTodoList = /* GraphQL */ `
       id
       name
       description
+      username
       createdAt
       updatedAt
-      owner
     }
   }
 `;
@@ -25,9 +25,9 @@ export const updateTodoList = /* GraphQL */ `
       id
       name
       description
+      username
       createdAt
       updatedAt
-      owner
     }
   }
 `;
@@ -40,9 +40,9 @@ export const deleteTodoList = /* GraphQL */ `
       id
       name
       description
+      username
       createdAt
       updatedAt
-      owner
     }
   }
 `;
