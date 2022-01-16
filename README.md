@@ -144,4 +144,16 @@
 
 ### choose your default editor
 
+### choose the code generation language target, Javascript
+
+### enter the file name pattern of graphql..., src/graphql/**/*.js
+
+### do you want to generate/update all graphql operations, yes
+
+### enter max statement depth, 2
+
+### wait to initialize
+
+### this creates a graphql folder with mutations.js, queries.js, schema.json, subscriptions.js
+
 ### 
