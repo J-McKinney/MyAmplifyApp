@@ -1,0 +1,31 @@
+.buttonContainer {
+  display: flex;
+  margin-right: 10;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 10;
+}
+
+.container {
+  width: 100%;
+  margin-bottom: 5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffb703;
+  border-radius: 2;
+}
+
+.todoName {
+  font-weight: bold;
+  margin-bottom: 10;
+  color: black;
+}
+
+.todoDescription {
+  margin-bottom: 0;
+  color: black;
+}
