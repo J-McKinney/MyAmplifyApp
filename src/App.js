@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import Amplify from "aws-amplify";
 import awsconfig from "./aws-exports";
 import { Authenticator } from "@aws-amplify/ui-react";
+import Styles from "./App.module.css";
 import "@aws-amplify/ui-react/styles.css";
 import "./App.css";
 
@@ -17,8 +18,10 @@ function App() {
           <Authenticator>
             {({ signOut, user }) => (
               <div>
-                <p>Hey {user.email}, welcome to my channel, with auth!</p>
-                <button onClick={signOut}>Sign out</button>
+                <p>Hey {user.username}, welcome to my app!</p>
+                <button className={Styles.btn} onClick={signOut}>
+                  Sign out
+                </button>
               </div>
             )}
           </Authenticator>
