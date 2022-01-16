@@ -12,6 +12,7 @@ import {
 } from "./graphql/mutations";
 import ToDoList from "./components/ToDoList/ToDoList";
 import CreateToDo from "./components/CreateToDo/CreateToDo";
+import Spinner from "react-bootstrap/Spinner";
 import Styles from "./App.module.css";
 import "@aws-amplify/ui-react/styles.css";
 import "./App.css";
@@ -108,7 +109,30 @@ function App() {
   );
 
   if (isLoading) {
-    return "Loading...";
+    // return "Loading...";
+    return (
+      <div
+        style={{
+          textAlign: "center",
+          marginTop: "50vh",
+        }}
+      >
+        <Spinner
+          style={{
+            height: "200px",
+            width: "200px",
+            color: "#282c34",
+            borderWidth: "25px",
+          }}
+          animation="border"
+          variant="dark"
+        />
+        <h1 style={{ color: "#282c34", fontSize: "20px", fontWeight: "bold" }}>
+          Loading...
+        </h1>
+        ;
+      </div>
+    );
   }
 
   return (
@@ -125,7 +149,7 @@ function App() {
                   Sign out
                 </button>
                 <div className={Styles.container}>
-                  {errorMessage}
+                  {errorMessage};
                   <div className={Styles.grid}>
                     <ToDoList
                       todos={todos}
