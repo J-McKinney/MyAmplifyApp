@@ -130,7 +130,6 @@ function App() {
         <h1 style={{ color: "#282c34", fontSize: "20px", fontWeight: "bold" }}>
           Loading...
         </h1>
-        ;
       </div>
     );
   }
