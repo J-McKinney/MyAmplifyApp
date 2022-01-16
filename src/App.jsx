@@ -38,7 +38,7 @@ function App() {
     setIsLoading(true);
     try {
       const todoData = await API.graphql(graphqlOperation(listTodoLists));
-      const todos = todoData.data.listTodosLists.items;
+      const todos = todoData.data.listTodoLists.items;
       setTodos(todos);
       setApiError(null);
     } catch (error) {
@@ -47,7 +47,11 @@ function App() {
     } finally {
       setIsLoading(false);
     }
-  };
+  }
+  // async function fetchTodos() {
+  //   const apiData = await API.graphql({ query: listTodoLists });
+  //   setTodos(apiData.data.listTodoLists.items);
+  // }
 
   async function addTodo() {
     try {
@@ -94,13 +98,13 @@ function App() {
     }
   }
 
-  // const errorMessage = apiError && (
-  //   <p style={styles.errorText}>
-  //     {apiError.errors.map((error) => (
-  //       <p>{error.message}</p>
-  //     ))}
-  //   </p>
-  // );
+  const errorMessage = apiError && (
+    <p className={Styles.errorText}>
+      {apiError.errors.map((error) => (
+        <p>{error.message}</p>
+      ))}
+    </p>
+  );
 
   if (isLoading) {
     return "Loading...";
@@ -119,9 +123,9 @@ function App() {
                 <button className={Styles.btn} onClick={signOut}>
                   Sign out
                 </button>
-                <div style={styles.container}>
-                  {/* {errorMessage} */}
-                  <div style={styles.grid}>
+                <div className={Styles.container}>
+                  {errorMessage}
+                  <div className={Styles.grid}>
                     <ToDoList
                       todos={todos}
                       onRemoveTodo={removeTodo}
@@ -144,25 +148,5 @@ function App() {
     </>
   );
 }
-
-const styles = {
-  container: {
-    margin: "0 auto",
-    padding: 20,
-    backgroundColor: "#FFFFFF",
-    marginBottom: "100px",
-  },
-  errorText: {
-    color: "red",
-    fontWeight: "bold",
-    border: "2px solid red",
-    padding: 10,
-  },
-  grid: {
-    display: "grid",
-    gridTemplateColumns: "2fr 2fr",
-    gridGap: "20px",
-  },
-};
 
 export default App;

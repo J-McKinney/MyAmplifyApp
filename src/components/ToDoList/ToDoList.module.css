@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #023047;
+  background-color: #282c34;
   color: white;
-  margin-top: 10;
-  padding: 10;
+  margin-top: 10px;
+  padding: 10px;
 }

@@ -108,21 +108,25 @@
 
 ### and, under the style sheet add, Amplify.configure(awsconfig);
 
-### add, <Authenticator>
+### add in App.js
 
-### {({ signOut, user }) => (
+## <Authenticator>
 
-### <div>
+## {({ signOut, user }) => (
 
-### <p>Hey {user.username}, welcome to my app!</p>
+## <div>
 
-### <button>Sign out</button>
+## <p>Hey {user.username}, welcome to my app!</p>
 
-### </div>
+## <button>Sign out</button>
 
-### )}
+## </div>
 
-### </Authenticator>
+## )}
+
+## </Authenticator>
+
+### change App.js to App.jsx, this works better with react and amplify
 
 ### in the terminal, npm install aws-amplify @aws-amplify/ui-react
 
